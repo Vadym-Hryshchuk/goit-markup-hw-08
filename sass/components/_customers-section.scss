@@ -1,0 +1,35 @@
+.customers-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+.customers-list__item {
+  width: 170px;
+  height: 92px;
+}
+.customers-list__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+
+  fill: rgba(175, 177, 184, 1);
+  width: 100%;
+  height: 100%;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-list__link {
+  &:hover {
+    fill: $hover-color;
+    border: 1px solid $hover-color;
+  }
+  &:focus {
+    fill: $hover-color;
+    border: 1px solid $hover-color;
+  }
+}

@@ -1,0 +1,41 @@
+.social-networks-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 480px;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.social-networks-list__item {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: $hover-color;
+  &:not(:last-of-type) {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 22px;
+      margin: 0 10px;
+
+      background-image: url(/img/icons/pseudo-line.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
+.social-networks-list__link {
+  text-decoration: none;
+  color: currentColor;
+}
