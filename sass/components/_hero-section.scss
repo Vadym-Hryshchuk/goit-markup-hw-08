@@ -15,27 +15,27 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width:767px) {
-    background-image: url(/img/overlay-m@1x.jpg);
+    background-image: url(../img/overlay-m@1x.jpg);
     
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url(/img/overlay-m@2x.jpg);
+      background-image: url(../img/overlay-m@2x.jpg);
     }
       }
   @media screen and (min-width:$tablet) {
-    background-image: url(/img/overlay-t@1x.jpg);
+    background-image: url(../img/overlay-t@1x.jpg);
     
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url(/img/overlay-t@2x.jpg);
+      background-image: url(../img/overlay-t@2x.jpg);
     }
       }
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: url(/img/overlay-d@1x.jpg);
+    background-image: url(../img/overlay-d@1x.jpg);
     
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url(/img/overlay-d@2x.jpg);
+      background-image: url(../img/overlay-d@2x.jpg);
     }
   }
 }
