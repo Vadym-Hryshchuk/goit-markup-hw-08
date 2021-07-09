@@ -1,13 +1,18 @@
 .address {
+  margin-top: 20px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   font-style: normal;
 
   color: $white-color;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .address__text {
-  margin: 20px 0 9px;
+  margin: 0 0 9px;
 }
 .address__list {
   margin: 0;

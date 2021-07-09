@@ -148,20 +148,27 @@
 .modal-form__text {
   margin-right: 5px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
-
   color: $text-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 .modal-form__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
   color: $hover-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal-form__button {

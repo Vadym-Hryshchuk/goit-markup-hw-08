@@ -1,7 +1,13 @@
 .wrapper-soc-networks {
   width: 206px;
   height: 80px;
-  margin-top: 12px;
+  margin-top: 60px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
 }
 .wrapper-soc-networks__title {
   font-weight: 700;

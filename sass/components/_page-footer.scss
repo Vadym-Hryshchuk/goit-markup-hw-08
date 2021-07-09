@@ -5,5 +5,18 @@
 }
 .page-footer__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+.wrapper-page-footer-contacts {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }

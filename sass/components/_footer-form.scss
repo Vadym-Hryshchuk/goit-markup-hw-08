@@ -1,5 +1,8 @@
 .footer-form {
-  margin-top: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 .footer-form__title {
   font-weight: 700;
@@ -12,10 +15,14 @@
   margin: 0 0 20px;
 }
 .footer-form__field {
-  width: 358px;
-  display: inline-block;
-  position: relative;
-  margin-right: 12px;
+  width: 450px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    width: 358px;
+  }
 }
 .footer-form__input {
   width: 100%;
@@ -42,6 +49,7 @@
 .form-button {
   display: inline-flex;
   align-items: center;
+
   padding: 10px 28px;
 
   background-color: $hover-color;
@@ -51,6 +59,9 @@
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 .form-button {
   &:hover {

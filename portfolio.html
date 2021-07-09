@@ -20,10 +20,18 @@
     <!--Header-->
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="logo page-header__logo"
-            >Web<span class="logo__label">Studio</span>
-          </a>
+        <a href="./index.html" class="logo page-header__logo">
+          Web<span class="logo__label">Studio</span>
+        </a>
+        <button type="button" class="menu-open">
+          <svg width="24px" height="16px">
+            <use
+              class="icom-menu"
+              href="./img/icons/icons.svg#icon-mobile-menu"
+            ></use>
+          </svg>
+        </button>
+        <nav class="page-header__nav is-hidden">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link"> Студия </a>
@@ -39,25 +47,52 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
+          <div class="contacts wrapper">
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a href="tel:+380961111111" class="contacts-list__link phone">
+                  <svg class="contacts-list__icon-phone">
+                    <use href="./img/icons/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-list__link email"
+                >
+                  <svg class="contacts-list__icon-mail">
+                    <use href="./img/icons/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="social-networks-list">
+              <li class="social-networks-list__item">
+                <a href="#" class="social-networks-list__link">Instagram</a>
+              </li>
+              <li class="social-networks-list__item">
+                <a href="#" class="social-networks-list__link">Twitter</a>
+              </li>
+              <li class="social-networks-list__item">
+                <a href="#" class="social-networks-list__link">Facebook</a>
+              </li>
+              <li class="social-networks-list__item">
+                <a href="#" class="social-networks-list__link">LinkedIn</a>
+              </li>
+            </ul>
+            <button type="button" class="menu-close">
+              <svg width="24px" height="16px">
+                <use
+                  class="icon-cross"
+                  href="./img/icons/icons.svg#icon-close_menu"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </nav>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__link">
-              <svg class="contacts-list__icon-mail" width="16" height="12">
-                <use href="./img/icons/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link">
-              <svg class="contacts-list__icon-phone" width="10" height="16">
-                <use href="./img/icons/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <!--Our projects-->
@@ -275,7 +310,7 @@
     <!-- Footer -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div>
+        <div class="wrapper-page-footer-contacts">
           <a href="" class="logo"
             >Web<span class="logo__footer-label">Studio</span>
           </a>
@@ -295,6 +330,7 @@
             </ul>
           </address>
         </div>
+
         <!-- Sign social links -->
         <div class="wrapper-soc-networks">
           <p class="wrapper-soc-networks__title">присоединяйтесь</p>
@@ -349,5 +385,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
